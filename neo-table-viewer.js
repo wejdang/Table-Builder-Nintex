@@ -126,4 +126,4 @@ export class MyTable extends LitElement {
   }
 }
 
-customElements.define('neo-table-viewer', MyTable);
+customElements.define('neo-table-viewer2', MyTable);
