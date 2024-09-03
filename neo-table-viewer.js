@@ -1,10 +1,10 @@
-import { html, LitElement } from 'https://cdn.jsdelivr.net/gh/wejdang/Table-Builder-Nintex@main/imported%20class%20for%20table.js';
+import { html, LitElement } from 'https://cdn.jsdelivr.net/gh/lit/dist@2.6.1/all/lit-all.min.js';
 
 export class MyTable extends LitElement {
   static getMetaConfig() {
     // plugin contract information
     return {
-      controlName: 'neo-table-viewer2',
+      controlName: 'neo-table-viewer',
       fallbackDisableSubmit: false,
       description: 'Display object as a table',
       iconUrl: "group-control",
@@ -87,7 +87,7 @@ export class MyTable extends LitElement {
       } catch (e) {
         console.error(e);
         return html`
-          <p>please add items to view</p>
+          <p>Failed to parse dataobject</p>
         `;
       }
     }
@@ -126,4 +126,4 @@ export class MyTable extends LitElement {
   }
 }
 
-customElements.define('neo-table-viewer2', MyTable);
+customElements.define('neo-table-viewer', MyTable);
