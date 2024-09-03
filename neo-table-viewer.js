@@ -87,7 +87,7 @@ export class MyTable extends LitElement {
       } catch (e) {
         console.error(e);
         return html`
-          <p>Failed to parse dataobject</p>
+          <p>please add items to view</p>
         `;
       }
     }
